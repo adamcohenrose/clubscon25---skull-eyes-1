@@ -1,7 +1,7 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (On == 1) {
         if (receivedNumber == 1) {
-            for (let index = 0; index < 4; index++) {
+            for (let index = 0; index < 2; index++) {
                 basic.showLeds(`
                     . # # # .
                     # . . . #
@@ -16,10 +16,24 @@ radio.onReceivedNumber(function (receivedNumber) {
                     . # # # .
                     . . . . .
                     `)
+                basic.showLeds(`
+                    . # # # .
+                    # . . . #
+                    # . # . #
+                    # . . . #
+                    . # # # .
+                    `)
+                basic.showLeds(`
+                    . . # . .
+                    . . . . .
+                    # . # . #
+                    . . . . .
+                    . . # . .
+                    `)
             }
         }
         if (receivedNumber == 2) {
-            for (let index = 0; index < 4; index++) {
+            for (let index = 0; index < 2; index++) {
                 basic.showLeds(`
                     . . . . .
                     . # . # .
@@ -28,11 +42,25 @@ radio.onReceivedNumber(function (receivedNumber) {
                     . . . . .
                     `)
                 basic.showLeds(`
+                    # . . . #
+                    . . . . .
+                    . . # . .
+                    . . . . .
+                    # . . . #
+                    `)
+                basic.showLeds(`
                     . . . . .
                     . . # . .
                     . # # # .
                     . . # . .
                     . . . . .
+                    `)
+                basic.showLeds(`
+                    . . # . .
+                    . . . . .
+                    # . # . #
+                    . . . . .
+                    . . # . .
                     `)
             }
         }
